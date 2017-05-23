@@ -47,22 +47,22 @@ START -  ANIMATION TEXT svg drawing  */
   animation: stroke 6s infinite linear;
 }
 .text:nth-child(5n + 1) {
-  stroke: #F2385A;
+  stroke: #004df9;
   -webkit-animation-delay: -1.2s;
   animation-delay: -1.2s;
 }
 .text:nth-child(5n + 2) {
-  stroke: #F5A503;
+  stroke: #e01b1a;
   -webkit-animation-delay: -2.4s;
   animation-delay: -2.4s;
 }
 .text:nth-child(5n + 3) {
-  stroke: #E9F1DF;
+  stroke: #1504BD;
   -webkit-animation-delay: -3.6s;
   animation-delay: -3.6s;
 }
 .text:nth-child(5n + 4) {
-  stroke: #56D9CD;
+  stroke: #565656;
   -webkit-animation-delay: -4.8s;
   animation-delay: -4.8s;
 }
@@ -92,7 +92,7 @@ mark {
 
 mark svg {
   position: absolute;
-  width: 22%;
+  width: 36%;
 
   background-color: rgba(214, 214, 214, 0.7);
   transition: all initial;
