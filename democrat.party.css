@@ -311,6 +311,9 @@ START  :  Press.css snippit   */
     sup {
         line-height: 0;
     }
+    li {
+        padding: 0.7% 0;
+    }
     p {
         line-height: 1.2;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
@@ -354,7 +357,7 @@ START  :  Press.css snippit   */
         color: #333;
         position: absolute;
         left: 0;
-        top: 100%;
+        top: 125%;
         z-index: 20;
         white-space: nowrap;
         -moz-border-radius: 5px;
@@ -369,6 +372,7 @@ START  :  Press.css snippit   */
         background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
         background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
         background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+        opacity: 0.85;
     }
 
 /*END press snippit
