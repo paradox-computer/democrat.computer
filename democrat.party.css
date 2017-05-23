@@ -24,6 +24,18 @@ MIT LICENSE,  https://raw.githubusercontent.com/paradox-computer/democrat.comput
 ................~OOZ,...............,: .
 .......................................
 START -  ANIMATION TEXT svg drawing  */
+/*Reset press.css universal * */
+
+ #democratText > * {
+     -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none; 
+    -o-transition:all  6s infinite linear!important;
+    -moz-transition: all 6s infinite linear!important;
+     -webkit-transition: all 6s infinite linear!important; 
+     transition: all 6s infinite linear !important; 
+}
 
 .text {
   fill: none;
@@ -81,8 +93,9 @@ mark {
 mark svg {
   position: absolute;
   width: 22%;
-  max-width: 300px;
+
   background-color: rgba(214, 214, 214, 0.7);
+  transition: all initial;
 }
 
 /*END TEXT svg drawing animation
@@ -111,13 +124,11 @@ mark svg {
 .......................................
 START donkey background -outline line drawing */ 
 
-svg #partyIcon {width: 50%; margin-left: 25%}
+#partyIcon {width: 50%; margin-left: 25%}
 
 body{background-color: rgb(236, 236, 236);}
 
-#partyIcon svg {
-  fill: none !important;
-  stroke: black;
+#partyIcon  {
   stroke-width: 4.3;
 }
 
@@ -224,6 +235,143 @@ svg #mooseIcon{
 .stars-white{fill:#FFFFFF;}
 
 /*END SVG MORPH MOSSE _ DONKEY
+................:,......................
+..+8ZOO.......=OOO?~....................
+7OOOOO8 ......7OOOO:....................
+.OOOOO,+ ..:O,,OOO$ ....................
+.?OOOO+O?..OO$OOO8 .....................
+,8IOOOOOOOOOOOOO7OI,....................
+..IOI: 7OOOOOOOOOOOOOO~.......::........
+...... OOOOOOOO7OOIOOIO8OOZ$OZOOOO......
+......7OOOOOOOOO .8OOZ..OOO+.:OOOOO~....
+......OOOOZ$OOOO+:OOOO.7OOO8,OOOOOOO ...
+......OOOO.$OOOOOOOOOOOOOOOOOOOOOOOO ...
+............$OOOOOOOOOOOOOOOOOOOOOOO ...
+.............ZOOOOOOOOOOOOOOOOOOOOOO....
+..............+OOOOOOOOOOOOOZOOO.OOO:...
+.................OOO........,OOO  OO$ ..
+................ 7O~..........OOZ  OOO..
+.................:O=..........?O$ ..OO..
+..................OO .........+O ...IO..
+................. OZ,.........IO ....O=.
+..................$=$.........OO.... ?O.
+..................ZOO .......OO,.....OO.
+................~OOZ,...............,: .
+.......................................
+START  :  Press.css snippit   */
+
+
+    body, html {
+        padding: 0;
+        margin: 0;
+        font-size: 1.2em;
+        font-family: sans-serif;
+        color: #454545;
+        background-color: whitesmoke;
+        -webkit-font-smoothing: antialiased;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+  /* elegant hover */
+  .social-icons:hover { border: 2px solid transparent; }
+  /* durable drop shadow */
+  .blur { -webkit-filter: drop-shadow(0 0 7px #3FF9F9); }
+
+    /*modular or tpypgraphic scale: 'classic'  (r = 2, n = 5)*/
+    h1 {font-size: 2em}
+    h2 {font-size: 1.7411em}
+    h3 {font-size: 1.5157em}
+    h4 {font-size: 1.3195em}
+    h5 {font-size: 1.1487em}
+    body, p, ul {font-size: 1em }
+    sup, sub {font-size: .8706em}
+
+    article {
+        background-color: white;
+        width: 80%;
+        margin-left: 10%;
+        box-shadow: 0 20px 10px -10px rgba(150, 150, 150, 0.8);
+    }
+    img {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    h2 {
+        font-size: 1.33em;
+        margin: -1em 8% 0 8%;
+        padding-top: 22px;
+        cursor: default;
+    }
+    sup {
+        line-height: 0;
+    }
+    p {
+        line-height: 1.2;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
+        background-image: linear-gradient(rgba(0, 0, 0, .2) 1px, transparent 1px);
+        background-size: 100% 1.2em;
+        background-position: 0 1em;
+        background-origin: content-box;
+        font-size: 100%;
+        padding: 1em auto;
+        margin: 0 auto;
+        width: 78%;
+        cursor: default;
+    }
+    h4 {
+        font-size: 1.3em;
+        font-style: italic;
+        font-weight: 100;
+        text-align: right;
+        margin-right: 1.5em;
+        cursor: default;
+    }
+    .date { text-align: right;}
+    .notes {cursor: default;}
+    .no-break {white-space: nowrap}
+    a {
+        text-decoration: none;
+        color: #7ca065;
+        cursor: pointer;
+    }
+
+    /* tooltip on title attribute */
+    /* by Andres Ilich */
+    
+    a:hover {
+        position: relative;
+    }
+    a[title]:hover:after {
+        content: attr(title);
+        padding: 4px 8px;
+        color: #333;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 20;
+        white-space: nowrap;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0px 0px 4px #222;
+        -webkit-box-shadow: 0px 0px 4px #222;
+        box-shadow: 0px 0px 4px #222;
+        background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eeeeee), color-stop(1, #cccccc));
+        background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+        background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    }
+
+/*END press snippit
 ................:,......................
 ..+8ZOO.......=OOO?~....................
 7OOOOO8 ......7OOOO:....................
