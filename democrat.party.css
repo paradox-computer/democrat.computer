@@ -1,0 +1,154 @@
+
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+mark {
+  background: none;
+  background-size: .2em 100%;
+  font: 5em/1 sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+mark svg {
+  position: absolute;
+  width: 22%;
+  max-width: 300px;
+  background-color: rgba(214, 214, 214, 0.7);
+}
+
+
+body{background-color: rgb(236, 236, 236);}
+
+#partyIcon svg {
+  fill: none !important;
+  stroke: black;
+  stroke-width: 4.3;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+#partyIcon path {
+  fill: none;
+  stroke: #565656;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: -2000;
+  -webkit-animation: dash 7s infinite;
+  -o-animation: dash 7s infinite;
+  -moz-animation: dash 7s infinite;
+  animation: dash 7s infinite;
+  -webkit-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 2800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes dash {
+  from {
+    stroke-dashoffset: 2800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-o-keyframes dash {
+  from {
+    stroke-dashoffset: 2800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* end bk line drawing */
+
+/* start moose-donkey morph */
+svg #mooseIcon{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#mooseIcon .st0 {
+    fill: #FFF;
+}
+
+#mooseIcon .st1 {
+    fill: none;
+}
+#mooseIcon {
+    display: block;
+    box-sizing: border-box;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    fill-opacity: 0.9;
+}
+
+.red{fill:#1505BC;}
+.blue{fill:#DD0201;}
+.stars-white{fill:#FFFFFF;}
+
+/*end moose*/
+
+
