@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+       var loc = window.location.href+'';
+     if (loc.indexOf('http://')==0){
+         window.location.href = loc.replace('http://','https://');
+     }
+  </script><!-- phase 1 -->
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="Website" name="description">
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+  <title>leahy.democrat</title>
+  <meta content="Jordan Lafland" name="author"><!-- Disable tap highlight on IE -->
+  <meta content="no" name="msapplication-tap-highlight"><!-- Add to homescreen for Chrome on Android -->
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="leahy.democrat" name="application-name"><!-- Add to homescreen for Safari on iOS -->
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="leahy.democrat" name="apple-mobile-web-app-title">
+  <meta content="black" name="msapplication-TileColor"><!-- Color the status bar on mobile devices -->
+  <meta content="black" name="theme-color"><!-- phase 2 -->
+  <meta content="F_wCBCcLhfMf5_nqm7hT-IbzaLvoxppx1277kRqDwcU" name="google-site-verification">
+  <meta content="leahy.democrat" name="title">
+  <link rel="canonical" href="https://leahy.democrat">
+  <meta content="leahy.democrat Raking Member: United States Senate Committee on the Judiciary" name="description">
+  <meta content="leahy.democrat Raking Member: United States Senate Committee on the Judiciary" name="keywords"><!--  FB Open Graph meta tags -->
+  <meta content="leahy.democrat" property="og:title">
+  <meta content="leahy.democrat Raking Member: United States Senate Committee on the Judiciary" property="og:description">
+  <meta content="summary" property="og:type">
+  <meta content="favicon.png" property="og:image">
+  <meta content="https://leahy.democrat" property="og:url">
+  <meta content="leahy.democrat" property="og:site_name"><!-- Twitter card meta tags -->
+  <meta content="summary" property="twitter:card">
+  <meta content="https://leahy.democrat" name="twitter:url">
+  <meta content="leahy.democrat" property="twitter:title">
+  <meta content="leahy.democrat Raking Member: United States Senate Committee on the Judiciary" name="twitter:description">
+  <script data-require="angular.js@1.2.10" data-semver="1.2.10" src="https://code.angularjs.org/1.2.10/angular.js">
+  </script>
+  <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js">
+  </script>
+
+  <link href="app/app.css" rel="stylesheet">  <link rel="stylesheet" type="text/css" href="https://system.computer/press/press.min.css">
+</head>
+
+  <body>
+    <div class="container" ng-app="app">
+      <header ng-include="'app/templates/nav.html'"></header>
+      <div ui-view></div>
+      <footer ng-include="'app/templates/footer.html'"></footer>
+    </div>
+
+  
+  <script src="app/app.js"></script>
+  <script src="app/controllers/leahyCtrl.js"></script>
+  <script src="app/controllers/workCtrl.js"></script>
+  <script src="app/controllers/missionCtrl.js"></script>
+  <script src="app/controllers/newsCtrl.js"></script>
+  <script src="app/controllers/contactCtrl.js"></script>
+ </body>
+</html>
